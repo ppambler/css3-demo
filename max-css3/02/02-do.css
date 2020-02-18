@@ -1,0 +1,41 @@
+* {
+  margin:0;
+  padding:0;
+}
+/* 注意样式规则一样，可以用selector list哈 */
+
+/* html,
+body {
+  height: 100%;
+} */
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+.all {
+  padding: 10px 20px 30px 40px;
+  border: 2px solid yellow;
+  margin: 40px 20px 30px 10px ;
+  display: inline-block;
+}
+
+.box1 {
+  /* height: 100%; */
+  height: 300px;
+  /* 注意空格也是字符，也有占有宽度 */
+  width: 48%;
+  display: none;
+}
+
+/* 这种方法好辣鸡，只要多了一个script标签在最后边，就GG了 */
+/* body > div:last-child:hover {
+  background-color: yellowgreen;
+} */
+
+/* 这选择器有点多（1个元素选择器+2个伪类选择器），效率不好，最好使用class或ID */
+div:last-of-type:hover {
+  border-color: palevioletred;
+}
